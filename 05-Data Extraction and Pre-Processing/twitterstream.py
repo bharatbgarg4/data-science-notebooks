@@ -2,12 +2,15 @@ from tweepy import Stream
 from tweepy.streaming import StreamListener
 import tweepy, json ,re
 from textblob import TextBlob
-auth = tweepy.OAuthHandler('8zsc9RGlTWUY1Ry5c8nW9XWkE','oXmqvkTFs6HwApn7GMwNdobOKOwRmpXjAh3gvd61Rx45pXmCA9')
-auth.set_access_token('922774402562891776-hy6Hyc4ZPrX2BwPChBhJVuQsQ5lXxv5','apho6MbDYGwQRhtXPuaJLB891uuIFjTRyAhnpOJCfQ4z8')
+
+from ../private.py import consumer_key, consumer_secret, access_token, access_token_secret
+auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
+auth.set_access_token(access_token,access_token_secret)
+
 api = tweepy.API(auth)
 
 def clean_tweet(tweet): 
-    return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t]) |(\w+:\/\/\S+)", " ", tweet).split()) 
+    return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t]) |(\w+:\/\/\S+)", " ", tweet).split())
   
 def get_tweet_sentiment(tweet): 
     analysis = TextBlob(clean_tweet(tweet)) 
