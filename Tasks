@@ -1,0 +1,34 @@
+Tweets Munging
+
+clf---
+create examples
+
+reg---
+ridge lasso
+svr
+ensemble
+
+clustering
+
+Hadoop big data intro
+installation
+data
+HDFS
+Map-Reduce
+Pig
+Hive
+HBase
+Sqoop
+Flume
+Zookeeper
+
+PCA, variance details
+add exercises
+dl
+
+Extra
+ambari - Provision, Monitor and Maintain cluster
+mahout mllib
+spark
+storm kafka
+drill mrjob yarn
