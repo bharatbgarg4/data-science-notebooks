@@ -1,16 +1,3 @@
-Tweets Munging
-
-clf---
-create examples
-
-reg---
-ridge lasso
-svr
-ensemble
-
-clustering
-
-Hadoop big data intro
 installation
 data
 HDFS
@@ -22,8 +9,8 @@ Sqoop
 Flume
 Zookeeper
 
-PCA, variance details
-add exercises
+Tweets Munging
+
 dl
 
 Extra
