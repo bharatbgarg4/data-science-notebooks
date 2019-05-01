@@ -4,7 +4,7 @@
 #### Ubuntu
 ```
 sudo apt-get install python-pip python-dev
-sudo pip install numpy pandas scikit-learn seaborn jupyter
+sudo pip install numpy pandas scikit-learn seaborn jupyter keras
 git clone https://github.com/bharatbgarg4/data-science-notebooks.git
 cd data-science-notebooks
 jupyter notebook
